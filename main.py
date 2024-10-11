@@ -11,7 +11,7 @@
 hint: что такое print?
 """
 
-# Замените это своим кодом
+# print ("hello world");
 
 """
  _____         _      _____ 
@@ -27,7 +27,16 @@ hint: что такое print?
 hint: цикл, если и "%"
 """
 
-# Замените это своим кодом
+# x = int(input("Введите число больше единицы: "))+1
+# for i in range (1, x):
+#     if i % 3 ==0 and i % 5 ==0:
+#       print(i, " FizzBuzz")
+#     elif i % 5 ==0:
+#       print(i," Buzz")
+#     elif i % 3 == 0:
+#       print (i," Fizz")
+#     else:
+#       print (i)
 
 """
  _____         _      _____ 
@@ -41,8 +50,11 @@ hint: цикл, если и "%"
 
 hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D1%81%D0%BD%D1%8B%D0%B5-%D0%B3%D0%BE%D0%B4%D1%8B
 """
-
-# Замените это своим кодом
+# x = int(input("Введите год: "))
+# if x % 4 ==0 and x % 100 != 0):
+#   print (x, " - Год високосный")
+# else:
+#   print (x, " - Год невисокосный")
 
 """
  _____         _        ___ 
@@ -57,7 +69,12 @@ hint: https://ru.wikihow.com/%D0%B2%D1%8B%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0
 hint: https://letpy.com/handbook/builtins/reversed/
 """
 
-# Замените это своим кодом
+# x = input("Введите число или строку: ")
+# y = x[::-1]
+# if x == y:
+#   print("Строка/число является полидромом")
+# else:
+#   print("Строка/число неявляется полидромом")
 
 """
  _____         _      _____ 
@@ -72,7 +89,12 @@ hint: https://letpy.com/handbook/builtins/reversed/
 hint: https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
 """
 
-# Замените это своим кодом
+# x = int(input("Введите число: "))
+# y = 1
+# for i in range(2, x+1):
+#   y *= i
+# print(y)
+
 
 """
  _____         _       ____ 
@@ -88,7 +110,21 @@ hint: x <= 1 - не простые числа
 hint 2: %
 """
 
-# Замените это своим кодом
+def is_number_simple(num):
+  divider = []
+  if num >= 1:
+    for i in range(1, 9):
+      if num % i == 0:
+        divider.append(i)
+        
+  if len(divider) == 2:
+    print('Это простое число', divider)
+  else:
+    print('Это не постое число', divider)
+
+is_number_simple(int(input('Введите число: ')))
+
+
 
 """
  _____         _      ______
@@ -102,8 +138,12 @@ hint 2: %
 
 hint: циклы
 """
-
-# Замените это своим кодом
+# x = input("Введите число: ")
+# list_x = [int(item) for item in list(str(x))]
+# result = 0
+# for item in list_x:
+#   result += item
+# print ("Сумма всех цифр числа равна: ", result)
 
 """
  _____         _      _____ 
@@ -119,7 +159,16 @@ hint: 1, 1, 2, 3 https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D
 hint 2: попробуйте решить с помощью рекурсии
 """
 
-# Замените это своим кодом
+# def fibonacci_limit(x):
+#     sequence = []
+#     a, b = 0, 1
+#     while a <= x:
+#         sequence.append(a)
+#         a, b = b, a + b
+#     return sequence
+
+# x = int(input("Введите число: "))
+# print(f"Последовательность Фибоначчи до {x}: {fibonacci_limit(x)}")
 
 
 
